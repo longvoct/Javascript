@@ -1,0 +1,22 @@
+PROPERTY BASIS
+- querySelector
+- querySelectorAll
+- getElementsByClassName
+- getElementsByTagName
+- getElementsByID
+- getAttribute
+- setAttribute
+- removeAttribute
+- hasAttribute
+- textContent
+- innerText
+- innerHTML
+
+WORKING WITH CLASS
+- selector.classList.add : lưu ý không được chứa khoảng trắng
+ví dụ: add(is-active is-color)
+- selector.classList.remove
+- selector.classList.contains
+-selector.classList.toggle("abc)
+
+-selector.classname -> trả ra chuỗi các class của Selector
