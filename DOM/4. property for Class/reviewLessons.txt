@@ -19,4 +19,4 @@ ví dụ: add(is-active is-color)
 - selector.classList.contains
 -selector.classList.toggle("abc)
 
--selector.classname -> trả ra chuỗi các class của Selector
+-selector.className -> trả ra chuỗi các class của Selector
