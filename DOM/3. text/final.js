@@ -6,5 +6,5 @@ console.log(spinner.textContent);
 console.log(spinner.innerText);
 // lệnh này xóa tất cả các khoảng trắng, cho text nằm trên một dòng. display:none thì ko hiện
 //3.innerHTML
-spinner.innerHTML = `<div class="demo">Hello HTML</div>`;
 console.log(spinner.innerHTML);
+spinner.innerHTML = `<div class="demo">Hello HTML</div>`;
