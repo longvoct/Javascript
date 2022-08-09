@@ -23,3 +23,10 @@ document.body.appendChild(div);
 const divSelector = document.querySelector(".wrapper");
 console.log("divSelector: ", divSelector);
 divSelector.insertAdjacentHTML("afterbegin", template);
+
+//insertBefore --> khá giống với insertAdjacentElement. Nhưng iAE chỉ dùng được cho 4 vị trí.
+// còn iB lại dùng được cho nextElementSibling
+//syntax: parentNode.insertBefore(newnode, existingnode)
+// document.body.insertBefore(newnode, existingnode);
+
+//node.replaceChild(newnode, oldnode);

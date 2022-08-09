@@ -1,0 +1,4 @@
+console.log(document.title); --> trả về title trang website
+--> sửa tên: document.title = "String"
+
+truy xuất vào thẻ head --> document.head hoặc const head = document.getElementsByTagName("head")[0]

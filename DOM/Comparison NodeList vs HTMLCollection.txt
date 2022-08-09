@@ -1,0 +1,18 @@
+Điểm giống: có thể truy cập index, có độ dài, khá giống mảng nhưng không hẳn là mảng
+--> ko sử dụng được các phương thức: pop, shift, push, map, filter
+
+Khác:
+
+- HTML Collection: không sử dụng được forEach
+- NodeList: sử dụng được
+
+// Sự khác nhau giữa parentNode và parentElement
+parentNode --> chứa textNode, textComment
+parentElement --> có thể null
+
+//document.documentElemet --> lấy thẻ html
+
+
+//convert HTML Collection, NodeList --> array
+--> Array.from(HTML Collection or NodeList)
+// spread operator: [...HTML_COLLECTION], [...NodeList]
