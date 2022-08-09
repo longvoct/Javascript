@@ -11,22 +11,13 @@ tabItem.forEach((item) => {
     item.classList.add("active");
     console.log(item.dataset.item);
     for (let i = 0; i < tabContentItem.length; i++) {
-      // if (tabContentItem[i].dataset.value == item.dataset.item)
       if (item.dataset.item === tabContentItem[i].dataset.value) {
         tabContentItem.forEach((item) => {
           if (item.matches(".is-active")) item.classList.remove("is-active");
         });
         tabContentItem[i].classList.add("is-active");
+        break;
       }
-      // break;
     }
-    // console.log(content.dataset.setId);
-    //  if (content.dataset.setId== item.dataset.item) {
-    //     tabContentItem.forEach((item) => {
-    //       if (item.matches(".is-active")) item.classList.remove("is-active");
-
-    //     item.classList.add(".is-active");
-    //   }
-    // });
   });
 });
