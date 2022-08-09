@@ -4,6 +4,7 @@ const tagIcon = document.querySelectorAll("li i");
 
 tagItem.forEach((item) => {
   item.addEventListener("click", () => {
+    console.log(item.dataset.name)
     for (let i = 0; i < tagDesc.length; i++) {
       if (item.dataset.name === tagDesc[i].dataset.desc) {
         tagDesc[i].classList.toggle("is-show");
