@@ -1,5 +1,4 @@
 const imgItems = document.querySelectorAll(".img-item");
-
 const body = document.body;
 imgItems.forEach((item) => {
   item.addEventListener("click", (e) => {
@@ -42,7 +41,11 @@ document.addEventListener("click", (e) => {
         }
       }
     } else if (e.target.classList.contains("icon-right")) {
-      // console.log();
+      console.log(index);
+      if (index < imgItems.length) {
+      index++;
+        lightImg.setAttribute("src", imgItems[index].getAttribute("src"));
+      }
     } else if (!lightImg.contains(e.target))
       lightBox.parentNode.removeChild(lightBox);
   }
