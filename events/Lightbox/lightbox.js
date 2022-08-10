@@ -1,5 +1,5 @@
 const imgItems = document.querySelectorAll(".img-item");
-// console.log(imgItems[0].getAttribute("src"));
+
 const body = document.body;
 imgItems.forEach((item) => {
   item.addEventListener("click", (e) => {
