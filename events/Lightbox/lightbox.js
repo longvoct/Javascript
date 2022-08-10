@@ -42,8 +42,11 @@ document.addEventListener("click", (e) => {
       }
     } else if (e.target.classList.contains("icon-right")) {
       console.log(index);
-      if (index < imgItems.length) {
       index++;
+      if (index < imgItems.length) {
+        lightImg.setAttribute("src", imgItems[index].getAttribute("src"));
+      } else {
+        index = 0;
         lightImg.setAttribute("src", imgItems[index].getAttribute("src"));
       }
     } else if (!lightImg.contains(e.target))
