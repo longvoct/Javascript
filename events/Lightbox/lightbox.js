@@ -30,20 +30,19 @@ document.addEventListener("click", (e) => {
     }
     console.log(index);
     if (e.target.classList.contains("icon-left")) {
-      for (let i = 0; i < imgItems.length; i++) {
-        if (index === i) {
-          index = index - 1;
-          lightImg.setAttribute("src", imgItems[index - 1].getAttribute("src"));
-        } else if (index === 0) {
-          index = imgItems[imgItems.length - 1];
-          console.log(index);
-          lightImg.setAttribute("src", imgItems[index].getAttribute("src"));
-        }
+      index = index - 1;
+      if (index >= 0) {
+        lightImg.setAttribute("src", imgItems[index].getAttribute("src"));
+      } else if (index < 0) {
+        index = imgItems.length - 1;
+        lightImg.setAttribute("src", imgItems[index].getAttribute("src"));
       }
     } else if (e.target.classList.contains("icon-right")) {
-      console.log(index);
-      if (index < imgItems.length) {
       index++;
+      if (index < imgItems.length) {
+        lightImg.setAttribute("src", imgItems[index].getAttribute("src"));
+      } else {
+        index = 0;
         lightImg.setAttribute("src", imgItems[index].getAttribute("src"));
       }
     } else if (!lightImg.contains(e.target))
