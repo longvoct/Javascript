@@ -4,7 +4,7 @@ const re1 = /hello/;
 const re2 = new RegExp("hello");
 //hello world
 //regex.test(value) --> true or false
-// console.log(re1.test("hello world"));
+console.log(re1.test("hello world"));
 
 //2. Anchor ^ $ --> kiểm tra trong regular expression có start/end với từ nào đó ko
 //^ string bắt đầu với từ nào đó
@@ -65,5 +65,5 @@ console.log(str3.match(/d*/g));
 //--> lấy hết
 
 //6. groups ()
-
 console.log(/(\d{3})?(\w+)/.test("123"));
+//hoặc cái này hoặc cái kia --> true
