@@ -12,7 +12,6 @@ const itemBox = document.querySelectorAll(".item-box");
 
 itemBox.forEach((item) => {
   item.addEventListener("click", (e) => {
-    // e.preventDefault();
     headerContent.innerHTML = item.innerHTML;
     listBox.classList.remove("is-active");
     item;
