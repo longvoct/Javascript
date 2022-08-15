@@ -22,8 +22,8 @@ function timeOut(ms) {
   });
 }
 
-async funciton run () {
-console.log(running);
+async function run() {
+  console.log(running);
   await timeOut(2000);
   console.logc(endding);
 }
