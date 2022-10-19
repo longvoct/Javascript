@@ -10,3 +10,5 @@ h1Style.classList.remove("is-active");
 //4. className
 const select = document.querySelector(".container");
 console.log(select.className);
+
+console.log(h1Style.hasAttribute("class"));

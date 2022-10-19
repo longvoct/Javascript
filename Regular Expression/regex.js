@@ -45,10 +45,10 @@ const re3 = /hi/;
 //5. Quantifiers: {n} {n,m} + ? *
 //string.match(regex) "abc".match(/\w/) --> []
 const str1 = "Welcome to 20222046";
-console.log(str1.match(/\d\d\d\d/)[0]); //--> ddeer layas 2022//nhưng như vậy sẽ dài --> dùng {}
+console.log(str1.match(/\d\d\d\d/)[0]); //--> để lấy 2022//nhưng như vậy sẽ dài --> dùng {}
 console.log(str1.match(/\d{4}/)[0]); //{n}: số lượng nhất đình
 console.log(str1.match(/\d{4,6}/)[0]); //{n,m}: số lượng trong khoảng từ n tới m
-console.log(str1.match(/\d+/)[0]); //--> +: lấy 1 hoặc nhiều kí tự thảo điều kiện --> lấy hết
+console.log(str1.match(/\d+/)[0]); //--> +: lấy 1 hoặc nhiều kí tự thỏa điều kiện --> lấy hết
 const str2 = "color or colour?";
 console.log(str2.match(/color/)[0]);
 console.log(str2.match(/colou?r/g)); //--> array

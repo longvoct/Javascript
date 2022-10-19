@@ -28,17 +28,18 @@ cardImage.setAttribute("class", "card-image");
 card.appendChild(cardImage);
 body.appendChild(card);
  */
-//học về createTextNode
+// //học về createTextNode
 const body = document.querySelector("body");
 const h1 = document.createElement("h1");
+
 body.appendChild(h1);
 h1.className = "heading";
 const text = document.createTextNode("Hello my name is Long");
 h1.appendChild(text);
 
-//4. cloneNode
-// const h1Clone = h1.cloneNode(true);
-// body.appendChild(h1Clone);
-// console.log(h1Clone);
-console.log(h1.hasChildNodes());
+// //4. cloneNode
+const h1Clone = h1.cloneNode(true);
+body.appendChild(h1Clone);
+h1Clone.classList.add("subtitle");
+// console.log(h1.hasChildNodes());
 //5.element.hasChildNode -->kiểm tra có phần tử con hay không, có --> true, không thì trả về false
